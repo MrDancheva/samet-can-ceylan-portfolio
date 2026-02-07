@@ -1,0 +1,20 @@
+{
+  "name": "Samet Can Ceylan | Mekatronik Mühendisi",
+  "short_name": "SCC Portfolio",
+  "description": "Mekanik tasarım, robotik ve otonom sistemleri birleştiren Mekatronik Mühendisi. 2x Teknofest Finalisti.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050a10",
+  "theme_color": "#00f0ff",
+  "orientation": "portrait-primary",
+  "lang": "tr",
+  "categories": ["portfolio", "engineering", "technology"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

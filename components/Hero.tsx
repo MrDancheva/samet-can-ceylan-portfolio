@@ -103,6 +103,10 @@ const Hero: React.FC = () => {
               className="w-full h-auto object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-500"
               src="/ana.jpeg"
               loading="eager"
+              width={600}
+              height={400}
+              fetchPriority="high"
+              decoding="async"
               style={{ maxHeight: '400px' }}
             />
             {/* Scanning Line Animation */}

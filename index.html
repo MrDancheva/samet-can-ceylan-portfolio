@@ -98,14 +98,76 @@
     }
     </script>
     
-    <!-- Favicon -->
+    <!-- Favicon & PWA -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="/ana.jpeg" as="image" type="image/jpeg" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" as="style" />
+    
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+    
+    <!-- CreativeWork Structured Data - Projects -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Mühendislik Projeleri",
+      "description": "Samet Can Ceylan'ın mekatronik mühendisliği projeleri",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Otonom Tarımsal İKA (İnsansız Kara Aracı)",
+            "description": "Jetson Nano ve OpenCV tabanlı otonom tarım robotu. Bilgisayarlı görü ile bitki tespiti ve otonom navigasyon. Teknofest Tarım Teknolojileri Finalisti.",
+            "url": "https://sametcanceylan.com/#projects",
+            "image": "https://sametcanceylan.com/TeknofestİKA.jpg",
+            "author": { "@type": "Person", "name": "Samet Can Ceylan" },
+            "keywords": ["Jetson Nano", "OpenCV", "Otonom Araç", "Tarım Robotu", "Teknofest", "ROS"],
+            "award": "Teknofest Tarım Teknolojileri Finalisti"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Savunma Sanayi İKA (İnsansız Kara Aracı)",
+            "description": "ROS tabanlı savunma amaçlı insansız kara aracı. Geekom Mini PC, tam mekanik tasarım ve montaj. Teknofest Savunma Sanayi Finalisti.",
+            "url": "https://sametcanceylan.com/#projects",
+            "image": "https://sametcanceylan.com/5.jpg",
+            "author": { "@type": "Person", "name": "Samet Can Ceylan" },
+            "keywords": ["ROS", "Savunma Sanayi", "İnsansız Kara Aracı", "Teknofest", "Mekanik Tasarım"],
+            "award": "Teknofest Savunma Sanayi Finalisti"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Endüstriyel Atölye Operasyonları",
+            "description": "CNC torna, işleme merkezi, PLC programlama ve endüstriyel otomasyon projeleri. Fren diski/kampana CNC işleme, paketleme makinesi montajı.",
+            "url": "https://sametcanceylan.com/#projects",
+            "image": "https://sametcanceylan.com/endüstriyelatölyevecnc.jpeg",
+            "author": { "@type": "Person", "name": "Samet Can Ceylan" },
+            "keywords": ["CNC", "PLC", "Endüstriyel Otomasyon", "Torna", "Freze", "İşleme Merkezi"]
+          }
+        }
+      ]
+    }
+    </script>
 
     <style>
       body {

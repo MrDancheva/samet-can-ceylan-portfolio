@@ -41,6 +41,9 @@ const Projects: React.FC = () => {
                 src={project.imageUrl}
                 alt={`${project.title} - Samet Can Ceylan ${project.tags.join(', ')}`}
                 loading="lazy"
+                decoding="async"
+                width={400}
+                height={225}
                 className="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
               />
               <div className={`absolute bottom-0 left-0 ${project.statusColor} text-black text-xs font-bold px-2 py-1`}>
