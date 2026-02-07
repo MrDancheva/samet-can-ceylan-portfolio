@@ -9,6 +9,7 @@ interface TimelineLog {
   color: string;
   dotColor: string;
   border: string;
+  tags?: string[];
 }
 
 const Logs: React.FC = () => {
@@ -45,6 +46,15 @@ const Logs: React.FC = () => {
 
             <div className="flex flex-col mb-1">
               <h4 className={`text-xl font-bold ${log.color} group-hover:text-neon-orange transition-colors`}>{log.title}</h4>
+              {log.tags && log.tags.length > 0 && (
+                <div className="flex flex-wrap gap-2 mt-3">
+                  {log.tags.map(tag => (
+                    <span key={tag} className="text-xs border border-white/15 bg-white/5 text-gray-400 px-2.5 py-1 rounded hover:bg-neon-cyan/10 hover:text-neon-cyan hover:border-neon-cyan/30 transition-colors cursor-default">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Connector Line Highlight on Hover */}

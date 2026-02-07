@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24 pt-12 md:pt-0" data-purpose="hero">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24 pt-12 md:pt-0" data-purpose="hero" id="home">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Column: Text Info */}
         <div className="space-y-6">

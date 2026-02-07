@@ -62,9 +62,12 @@ const Projects: React.FC = () => {
                 {project.description}
               </p>
               <div className="mt-auto flex items-center gap-4">
-                <a href="#" className="text-neon-orange text-sm hover:underline decoration-neon-orange underline-offset-4">
+                <button
+                  type="button"
+                  className="text-neon-orange text-sm hover:underline decoration-neon-orange underline-offset-4 bg-transparent border-none cursor-pointer p-0"
+                >
                   {t('projects.access_data')}
-                </a>
+                </button>
                 {project.videoUrl && (
                   <a 
                     href={project.videoUrl} 

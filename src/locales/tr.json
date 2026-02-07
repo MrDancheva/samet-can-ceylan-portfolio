@@ -5,7 +5,9 @@
         "home": "ANA SAYFA",
         "specs": "ÖZELLİKLER",
         "projects": "PROJELER",
-        "logs": "KAYITLAR"
+        "logs": "KAYITLAR",
+        "experience": "DENEYİM",
+        "contact": "İLETİŞİM"
     },
     "hero": {
         "title": "MEKATRONİK\nMÜHENDİSİ",
@@ -25,7 +27,13 @@
         "kpi_core_temp": "Çekirdek Isısı",
         "kpi_cpu_load": "CPU Yükü",
         "kpi_latency": "Gecikme",
-        "kpi_system": "Sistem"
+        "kpi_system": "Sistem",
+        "cat_mechanical": "MEKANİK_İŞLEME",
+        "cat_electrical": "ELEKTRİK_SİSTEMLER",
+        "cat_software": "YAZILIM_&_TASARIM",
+        "skills_mechanical": ["CNC Torna", "CNC İşleme Merkezi", "Kara Torna", "Freze", "Tesviye", "Lazer Kesim", "Statik Boya", "Kaynak", "3D Baskı", "Montaj", "SolidWorks", "AutoCAD"],
+        "skills_electrical": ["PLC Programlama", "Pano Döşeme", "Elektronik Tasarım", "Sensör Entegrasyonu", "Motor Sürücüler", "Devre Analizi"],
+        "skills_software": ["Python", "OpenCV", "ROS", "MATLAB", "C/C++", "Git"]
     },
     "projects": {
         "log01_title": "Otonom Tarımsal İKA",
@@ -42,6 +50,12 @@
         "step3": "PLC Programlama",
         "step4": "Robotik Entegrasyon",
         "step5": "YZ & Bilgisayarlı Görü"
+    },
+    "experience": {
+        "title": "SAHA_DENEYİMİ"
+    },
+    "contact": {
+        "title": "İLETİŞİM_TERMİNALİ"
     },
     "footer": {
         "terminal_title": "TERMİNAL_PENCERESİ",

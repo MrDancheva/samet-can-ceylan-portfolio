@@ -9,43 +9,10 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
-    
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              mono: ['"Share Tech Mono"', 'monospace'],
-            },
-            colors: {
-              'neon-cyan': '#00f0ff',
-              'neon-orange': '#ff9900',
-              'deep-space': '#050a10',
-              'tech-gray': '#1a222e',
-            },
-            boxShadow: {
-              'glow-cyan': '0 0 10px rgba(0, 240, 255, 0.5)',
-              'glow-orange': '0 0 10px rgba(255, 153, 0, 0.5)',
-            },
-            animation: {
-              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-              'scan': 'scan 3s ease-in-out infinite',
-            },
-            keyframes: {
-              scan: {
-                '0%, 100%': { transform: 'translateY(0)' },
-                '50%': { transform: 'translateY(400px)' }, // Adjusted for container height
-              }
-            }
-          }
-        }
-      }
-    </script>
 
     <style>
       body {
@@ -190,20 +157,6 @@
         z-index: 20;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@18.2.0",
-    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
-    "react/": "https://esm.sh/react@18.2.0/",
-    "lucide-react": "https://esm.sh/lucide-react@0.263.1",
-    "framer-motion": "https://esm.sh/framer-motion@10.16.4",
-    "i18next": "https://esm.sh/i18next@23.5.1",
-    "react-i18next": "https://esm.sh/react-i18next@13.2.2?external=react"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body class="selection:bg-neon-cyan selection:text-black">
     <div id="root"></div>

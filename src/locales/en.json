@@ -5,7 +5,9 @@
         "home": "HOME",
         "specs": "SPECS",
         "projects": "PROJECTS",
-        "logs": "LOGS"
+        "logs": "LOGS",
+        "experience": "EXPERIENCE",
+        "contact": "CONTACT"
     },
     "hero": {
         "title": "MECHATRONICS\nENGINEER",
@@ -25,7 +27,13 @@
         "kpi_core_temp": "Core Temp",
         "kpi_cpu_load": "CPU Load",
         "kpi_latency": "Latency",
-        "kpi_system": "System"
+        "kpi_system": "System",
+        "cat_mechanical": "MECHANICAL_MACHINING",
+        "cat_electrical": "ELECTRICAL_SYSTEMS",
+        "cat_software": "SOFTWARE_&_DESIGN",
+        "skills_mechanical": ["CNC Lathe", "CNC Machining Center", "Manual Lathe", "Milling Machine", "Hand Finishing", "Laser Cutting", "Powder Coating", "Welding", "3D Printing", "Assembly", "SolidWorks", "AutoCAD"],
+        "skills_electrical": ["PLC Programming", "Panel Wiring", "Electronic Design", "Sensor Integration", "Motor Drives", "Circuit Analysis"],
+        "skills_software": ["Python", "OpenCV", "ROS", "MATLAB", "C/C++", "Git"]
     },
     "projects": {
         "log01_title": "Autonomous Agricultural UGV",
@@ -42,6 +50,12 @@
         "step3": "PLC Programming",
         "step4": "Robotics Integration",
         "step5": "AI & Computer Vision"
+    },
+    "experience": {
+        "title": "FIELD_EXPERIENCE"
+    },
+    "contact": {
+        "title": "COMMS_TERMINAL"
     },
     "footer": {
         "terminal_title": "TERMINAL_WINDOW",

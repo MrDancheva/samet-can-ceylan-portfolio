@@ -5,9 +5,10 @@ import { useTranslation } from 'react-i18next';
 interface HeaderProps {
   lang: 'en' | 'tr';
   onLanguageChange: (lang: 'en' | 'tr') => void;
+  activeSection: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ lang, onLanguageChange }) => {
+const Header: React.FC<HeaderProps> = ({ lang, onLanguageChange, activeSection }) => {
   const { t } = useTranslation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -21,10 +22,12 @@ const Header: React.FC<HeaderProps> = ({ lang, onLanguageChange }) => {
   };
 
   const navItems = [
-    { label: t('header.home'), href: '#' },
-    { label: t('header.specs'), href: '#specs' },
-    { label: t('header.projects'), href: '#projects' },
-    { label: t('header.logs'), href: '#logs' },
+    { id: 'home', label: t('header.home'), href: '#home' },
+    { id: 'specs', label: t('header.specs'), href: '#specs' },
+    { id: 'projects', label: t('header.projects'), href: '#projects' },
+    { id: 'experience', label: t('header.experience'), href: '#experience' },
+    { id: 'logs', label: t('header.logs'), href: '#logs' },
+    { id: 'contact', label: t('header.contact'), href: '#contact' },
   ];
 
   return (
@@ -40,20 +43,35 @@ const Header: React.FC<HeaderProps> = ({ lang, onLanguageChange }) => {
           {/* Right: Navigation (Desktop) */}
           <nav className="hidden md:flex items-center space-x-8">
             <ul className="flex space-x-8 text-sm">
-              {navItems.map((item) => (
-                <li key={item.label}>
-                  <a href={item.href} className="text-gray-400 hover:text-neon-cyan transition-colors group">
-                    <span className="text-neon-cyan opacity-0 group-hover:opacity-100 transition-opacity">[</span>
-                    <span className="mx-1">{item.label}</span>
-                    <span className="text-neon-cyan opacity-0 group-hover:opacity-100 transition-opacity">]</span>
-                  </a>
-                </li>
-              ))}
+              {navItems.map((item) => {
+                const isActive = activeSection === item.id;
+
+                return (
+                  <li key={item.id}>
+                    <a
+                      href={item.href}
+                      className={`text-gray-400 hover:text-neon-cyan transition-colors group ${isActive ? 'text-neon-cyan' : ''}`}
+                    >
+                      <span
+                        className={`text-neon-cyan transition-opacity ${isActive ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}
+                      >
+                        [
+                      </span>
+                      <span className="mx-1">{item.label}</span>
+                      <span
+                        className={`text-neon-cyan transition-opacity ${isActive ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}
+                      >
+                        ]
+                      </span>
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
 
             {/* CV Download Button */}
             <a
-              href="/CV.pdf"
+              href={lang === 'en' ? '/CV_SametCanCeylan_En.pdf' : '/CV_SametCanCeylan_TR.pdf'}
               download
               className="flex items-center gap-2 px-4 py-2 bg-neon-cyan/10 border border-neon-cyan hover:bg-neon-cyan hover:text-black text-neon-cyan text-xs transition-all uppercase tracking-wider font-semibold"
             >
@@ -74,7 +92,7 @@ const Header: React.FC<HeaderProps> = ({ lang, onLanguageChange }) => {
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-4">
             <a
-              href="/CV.pdf"
+              href={lang === 'en' ? '/CV_SametCanCeylan_En.pdf' : '/CV_SametCanCeylan_TR.pdf'}
               download
               className="flex items-center gap-1 px-2 py-1 border border-neon-cyan text-neon-cyan text-xs uppercase tracking-wider"
             >
@@ -100,18 +118,22 @@ const Header: React.FC<HeaderProps> = ({ lang, onLanguageChange }) => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[#050a10] border-b border-white/10">
           <ul className="px-4 py-4 space-y-4">
-            {navItems.map((item) => (
-              <li key={item.label}>
-                <a
-                  href={item.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block text-gray-400 hover:text-neon-cyan transition-colors"
-                >
-                  <span className="text-neon-cyan mr-2">&gt;</span>
-                  {item.label}
-                </a>
-              </li>
-            ))}
+            {navItems.map((item) => {
+              const isActive = activeSection === item.id;
+
+              return (
+                <li key={item.id}>
+                  <a
+                    href={item.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`block transition-colors ${isActive ? 'text-neon-cyan' : 'text-gray-400 hover:text-neon-cyan'}`}
+                  >
+                    <span className="text-neon-cyan mr-2">&gt;</span>
+                    {item.label}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
       )}

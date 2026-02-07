@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-cyan: #00f0ff;
+  --color-neon-orange: #ff9900;
+  --color-deep-space: #050a10;
+  --color-tech-gray: #1a222e;
+  --font-mono: "Share Tech Mono", "Courier New", monospace;
+  --shadow-glow-cyan: 0 0 10px rgba(0, 240, 255, 0.5);
+  --shadow-glow-orange: 0 0 10px rgba(255, 153, 0, 0.5);
+  --animate-pulse-fast: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-scan: scan 3s ease-in-out infinite;
+
+  @keyframes scan {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(400px); }
+  }
+}
