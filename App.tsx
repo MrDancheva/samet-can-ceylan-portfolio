@@ -8,6 +8,7 @@ import Logs from './components/Logs';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import SEOHead from './components/SEOHead';
 
 const App: React.FC = () => {
   const { i18n } = useTranslation();
@@ -46,6 +47,7 @@ const App: React.FC = () => {
       <div className="bg-grid"></div>
       <div className="bg-vignette"></div>
 
+      <SEOHead />
       <Header lang={lang} onLanguageChange={handleLanguageChange} activeSection={activeSection} />
       
       <main className="pt-24 pb-12">

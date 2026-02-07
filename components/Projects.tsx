@@ -39,7 +39,8 @@ const Projects: React.FC = () => {
             <div className="aspect-video w-full overflow-hidden bg-black relative">
               <img
                 src={project.imageUrl}
-                alt={project.title}
+                alt={`${project.title} - Samet Can Ceylan ${project.tags.join(', ')}`}
+                loading="lazy"
                 className="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
               />
               <div className={`absolute bottom-0 left-0 ${project.statusColor} text-black text-xs font-bold px-2 py-1`}>

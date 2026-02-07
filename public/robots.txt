@@ -1,0 +1,17 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sametcanceylan.com/sitemap.xml
+
+# Disallow admin/api paths
+Disallow: /api/
+Disallow: /_next/
+
+# Allow all assets
+Allow: /ana.jpeg
+Allow: /5.jpg
+Allow: /favicon.svg
+Allow: /*.js$
+Allow: /*.css$

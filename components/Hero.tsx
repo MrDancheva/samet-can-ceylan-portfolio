@@ -99,9 +99,10 @@ const Hero: React.FC = () => {
           <div className="relative overflow-hidden bg-tech-gray/50 hud-brackets">
             {/* Using a placeholder robotic arm image that looks industrial */}
             <img
-              alt="Robotic Arm Prototype"
+              alt={t('hero.title') + ' - Samet Can Ceylan | Mekatronik Mühendisi, Robotik Kol Prototipi, Otomasyon Sistemleri'}
               className="w-full h-auto object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-500"
               src="/ana.jpeg"
+              loading="eager"
               style={{ maxHeight: '400px' }}
             />
             {/* Scanning Line Animation */}
