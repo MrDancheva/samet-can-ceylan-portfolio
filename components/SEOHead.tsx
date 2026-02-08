@@ -3,21 +3,21 @@ import { useTranslation } from 'react-i18next';
 
 const seoData = {
   tr: {
-    title: 'Samet Can Ceylan | Mekatronik Mühendisi - Robotik, Otomasyon & Mekanik Tasarım',
-    description: 'Samet Can Ceylan: Mekanik tasarım, robotik ve otonom sistemleri birleştiren Mekatronik Mühendisi. SolidWorks, ROS, Jetson Nano, CNC, PLC programlama ve yapay zeka uzmanlığı. 2x Teknofest Finalisti.',
-    keywords: 'Samet Can Ceylan, Mekatronik Mühendisi, Robotik, Otomasyon, SolidWorks, AutoCAD, ROS, Jetson Nano, OpenCV, CNC, PLC, Python, Teknofest, Otonom Araç, UGV, Mekanik Tasarım, 3D Baskı',
-    ogTitle: 'Samet Can Ceylan | Mekatronik Mühendisi',
-    ogDescription: 'Mekanik tasarım, robotik ve otonom sistemleri birleştiren Mekatronik Mühendisi. SolidWorks, ROS, Jetson Nano, CNC & PLC uzmanlığı. 2x Teknofest Finalisti.',
-    twitterDescription: 'Atomları bitlerle birleştiren Mekatronik Mühendisi. Robotik, CNC, PLC, AI & otonom sistemler. 2x Teknofest Finalisti.',
+    title: 'Samet Can Ceylan | Konya Mekatronik Mühendisi - Robotik, Otomasyon & Mekanik Tasarım',
+    description: 'Konya merkezli Mekatronik Mühendisi Samet Can Ceylan. Mekanik tasarım, robotik, otonom sistemler, SolidWorks, ROS, Jetson Nano, CNC, PLC programlama ve yapay zeka uzmanlığı. 2x Teknofest Finalisti. Konya mühendislik hizmetleri.',
+    keywords: 'Samet Can Ceylan, Mekatronik Mühendisi, Konya Mekatronik Mühendisi, Konya Mühendis, Konya Robotik, Konya Otomasyon, SolidWorks, AutoCAD, ROS, Jetson Nano, OpenCV, CNC, PLC, Python, Teknofest, Otonom Araç, UGV, Mekanik Tasarım, 3D Baskı, Konya CNC, Konya PLC Programlama, Mekatronik Mühendisi Konya',
+    ogTitle: 'Samet Can Ceylan | Konya Mekatronik Mühendisi',
+    ogDescription: 'Konya merkezli Mekatronik Mühendisi. Mekanik tasarım, robotik, otonom sistemler. SolidWorks, ROS, Jetson Nano, CNC & PLC uzmanlığı. 2x Teknofest Finalisti.',
+    twitterDescription: 'Konya merkezli Mekatronik Mühendisi. Robotik, CNC, PLC, AI & otonom sistemler. 2x Teknofest Finalisti.',
     locale: 'tr_TR',
   },
   en: {
-    title: 'Samet Can Ceylan | Mechatronics Engineer - Robotics, Automation & Mechanical Design',
-    description: 'Samet Can Ceylan: Mechatronics Engineer bridging mechanical design, robotics, and autonomous systems. SolidWorks, ROS, Jetson Nano, CNC, PLC programming, and AI expertise. 2x Teknofest Finalist.',
-    keywords: 'Samet Can Ceylan, Mechatronics Engineer, Robotics, Automation, SolidWorks, AutoCAD, ROS, Jetson Nano, OpenCV, CNC, PLC, Python, Teknofest, Autonomous Vehicle, UGV, Mechanical Design, 3D Printing',
-    ogTitle: 'Samet Can Ceylan | Mechatronics Engineer',
-    ogDescription: 'Mechatronics Engineer bridging mechanical design, robotics, and autonomous systems. SolidWorks, ROS, Jetson Nano, CNC & PLC expertise. 2x Teknofest Finalist.',
-    twitterDescription: 'Merging atoms with bits. Mechatronics Engineer specializing in Robotics, CNC, PLC, AI & autonomous systems. 2x Teknofest Finalist.',
+    title: 'Samet Can Ceylan | Mechatronics Engineer in Konya - Robotics, Automation & Mechanical Design',
+    description: 'Samet Can Ceylan: Mechatronics Engineer based in Konya, Turkey. Bridging mechanical design, robotics, and autonomous systems. SolidWorks, ROS, Jetson Nano, CNC, PLC programming, and AI expertise. 2x Teknofest Finalist.',
+    keywords: 'Samet Can Ceylan, Mechatronics Engineer, Konya Mechatronics Engineer, Konya Engineer, Robotics, Automation, SolidWorks, AutoCAD, ROS, Jetson Nano, OpenCV, CNC, PLC, Python, Teknofest, Autonomous Vehicle, UGV, Mechanical Design, 3D Printing, Konya Turkey Engineer',
+    ogTitle: 'Samet Can Ceylan | Mechatronics Engineer in Konya',
+    ogDescription: 'Mechatronics Engineer based in Konya, Turkey. Mechanical design, robotics, autonomous systems. SolidWorks, ROS, Jetson Nano, CNC & PLC expertise. 2x Teknofest Finalist.',
+    twitterDescription: 'Mechatronics Engineer in Konya. Robotics, CNC, PLC, AI & autonomous systems. 2x Teknofest Finalist.',
     locale: 'en_US',
   },
 };
