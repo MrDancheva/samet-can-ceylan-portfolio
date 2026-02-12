@@ -148,7 +148,7 @@
           "color": "text-neon-cyan",
           "dotColor": "bg-neon-cyan",
           "border": "border-neon-cyan",
-          "tags": ["Jetson Nano", "OpenCV", "Raspberry Pi", "Geekom Mini PC", "Python", "YOLO"]
+          "tags": ["Jetson Nano", "OpenCV", "Raspberry Pi", "Geekom Mini PC", "Python", "YOLO", "NLP", "OpenAI API", "Speech Recognition", "TTS"]
         },
         {
           "id": "4",
@@ -338,11 +338,11 @@
         },
         {
           "id": "5",
-          "title": "Bilgisayarlı Görüntü İşleme",
+          "title": "Yapay Zeka & Görüntü İşleme",
           "color": "text-neon-cyan",
           "dotColor": "bg-neon-cyan",
           "border": "border-neon-cyan",
-          "tags": ["Jetson Nano", "OpenCV", "Raspberry Pi", "Geekom Mini PC", "Python", "YOLO"]
+          "tags": ["Jetson Nano", "OpenCV", "Raspberry Pi", "Geekom Mini PC", "Python", "YOLO", "NLP", "OpenAI API", "Ses Tanıma", "TTS"]
         },
         {
           "id": "4",

@@ -69,6 +69,15 @@
           "imageUrl": "/endüstriyelatölyevecnc.jpeg",
           "status": "DEPLOYED",
           "statusColor": "bg-neon-cyan"
+        },
+        {
+          "id": "4",
+          "title": "J.A.R.V.I.S — AI Desktop Assistant",
+          "tags": ["Python", "Speech Recognition", "NLP", "OpenAI API", "Text-to-Speech"],
+          "description": "An intelligent AI-powered desktop assistant inspired by Iron Man's J.A.R.V.I.S. Features real-time voice command recognition, natural language processing for contextual understanding, and text-to-speech response generation. Capable of performing system operations, web searches, application control, weather queries, and conversational AI interactions. Built with a modular Python architecture for extensibility and seamless user experience.",
+          "imageUrl": "/jarvis.png",
+          "status": "BETA",
+          "statusColor": "bg-neon-orange"
         }
       ]
     },
@@ -139,7 +148,7 @@
           "color": "text-neon-cyan",
           "dotColor": "bg-neon-cyan",
           "border": "border-neon-cyan",
-          "tags": ["Jetson Nano", "OpenCV", "Raspberry Pi", "Geekom Mini PC", "Python", "YOLO"]
+          "tags": ["Jetson Nano", "OpenCV", "Raspberry Pi", "Geekom Mini PC", "Python", "YOLO", "NLP", "OpenAI API", "Speech Recognition", "TTS"]
         },
         {
           "id": "4",
@@ -254,6 +263,15 @@
           "imageUrl": "/endüstriyelatölyevecnc.jpeg",
           "status": "DEPLOYED",
           "statusColor": "bg-neon-cyan"
+        },
+        {
+          "id": "4",
+          "title": "J.A.R.V.I.S — Yapay Zeka Masaüstü Asistanı",
+          "tags": ["Python", "Ses Tanıma", "NLP", "OpenAI API", "Metin-Sese Dönüştürme"],
+          "description": "Iron Man'in J.A.R.V.I.S.'inden ilham alan yapay zeka destekli akıllı masaüstü asistanı. Gerçek zamanlı sesli komut tanıma, bağlamsal anlama için doğal dil işleme ve metinden sese yanıt üretimi özellikleri sunar. Sistem işlemleri, web aramaları, uygulama kontrolü, hava durumu sorgulaması ve yapay zeka ile sohbet etkileşimleri gerçekleştirebilir. Genişletilebilirlik ve sorunsuz kullanıcı deneyimi için modüler Python mimarisi ile inşa edilmiştir.",
+          "imageUrl": "/jarvis.png",
+          "status": "BETA",
+          "statusColor": "bg-neon-orange"
         }
       ]
     },
@@ -320,11 +338,11 @@
         },
         {
           "id": "5",
-          "title": "Bilgisayarlı Görüntü İşleme",
+          "title": "Yapay Zeka & Görüntü İşleme",
           "color": "text-neon-cyan",
           "dotColor": "bg-neon-cyan",
           "border": "border-neon-cyan",
-          "tags": ["Jetson Nano", "OpenCV", "Raspberry Pi", "Geekom Mini PC", "Python", "YOLO"]
+          "tags": ["Jetson Nano", "OpenCV", "Raspberry Pi", "Geekom Mini PC", "Python", "YOLO", "NLP", "OpenAI API", "Ses Tanıma", "TTS"]
         },
         {
           "id": "4",
